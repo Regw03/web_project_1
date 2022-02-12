@@ -17,6 +17,7 @@
   padding-right: 80px;
   position: relative;
   box-sizing: border-box;
+  
 }
 
 .nav {
@@ -50,18 +51,22 @@
 /* Add the hover state styles for .nav__link here */
 
 .header__title {
+  position: relative;
   max-width: 544px;
   font-size: 66px;
   font-weight: 500;
   line-height: 76px;
   margin: 150px 0 0;
+  z-index: 2;
 }
 
 .header__description {
+  position: relative;
   max-width: 465px;
   font-size: 20px;
   line-height: 30px;
   margin: 32px 0 0;
+  z-index: 2;
 }
 
 .header__image {
@@ -117,7 +122,6 @@
   line-height: 30px;
   font-weight: 400;
   margin: 24px 0 0;
-  bottom: 40px;
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
@@ -247,7 +251,7 @@
   flex-shrink: 0;
   flex-basis: 780px;
   position: relative;
-  z-index: -1;
+ 
 }
 
 .events__image {
@@ -375,10 +379,12 @@
 }
 
 .about__title {
+  max-width: 154px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
   z-index: 3;
+  margin: 0;
 }
 
 .about__content {
@@ -386,12 +392,14 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   z-index: 4;
 }
 
 .about__paragraph {
-  gap: 32px;
+  margin: 0;
 }
 
 .about__circle {
@@ -412,28 +420,20 @@
 }
 
 .footer__columns {
-  /* height: 100px; */
   display: flex;
-  justify-content: center;
 }
 
 .footer__column_hours {
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
   margin-right: 100px;
+  margin-left: auto;
 }
 
 .footer__column_social {
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
   margin-right: 0;
 }
 
 .footer__logo {
   max-width: 153px;
-  margin-right: auto;
 }
 
 .footer__list {
@@ -445,17 +445,19 @@
 
 .footer__list-item {
   margin-top: 20px;
-  color: white;
+  color: #ffffff;
 }
 
 .footer__column-heading {
-  color: white;
+  color: #ffffff;
   margin-top: 0;
   margin-bottom: 0px;
 }
 
 .footer__column-link {
-  color: white;
+  display: flex;
+  align-items: right;
+  color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -465,9 +467,11 @@
 }
 
 .footer__social-icon {
+  margin-right: 5px;
+  color: #ffffff;
 }
 
 .footer__copyrights {
   margin-top: 100px;
-  color: white;
+  color: #ffffff;
 }
